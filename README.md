@@ -15,6 +15,7 @@ Instructions for starting the project:
 Link to ER-Diagram: https://www.drawdb.app/editor?shareId=6aad5f277a9334de90748a0945251f09
 
 Intial drop value sql script:
+
 delete from SpotifyData 
 where tempo < 0.00002 or valence < 0.00002 or acousticness < 0.00002;
 
