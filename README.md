@@ -13,3 +13,16 @@ Instructions for starting the project:
 3. Use project.py to write your sql code, and then commit your changes in work control in Visual Studio Code. Make sure to add comments to the work you did.
 
 Link to ER-Diagram: https://www.drawdb.app/editor?shareId=6aad5f277a9334de90748a0945251f09
+
+Intial drop value sql script:
+delete from SpotifyData 
+where tempo < 0.00002 or valence < 0.00002 or acousticness < 0.00002;
+
+PRAGMA table_info(SpotifyData);
+
+select track_name , artists , album_name
+from SpotifyData 
+order by album_name asc;
+
+ALTER TABLE SpotifyData 
+DROP COLUMN Column1;
